@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is html form tutorial</h2>
+    <!-- press form enter to make a form -->
+    <!-- action is php file where form data is stored -->
+    <!-- now we do everything inside form tag -->
+    <form action="backend.php">
+        <!-- input enter to take input in form from input box -->
+        <!-- use div tag (divide)for new line like br tag -->
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div> <br>
+        <div>
+            <!-- input:email enter & select email to take email as input, where name is the key to recognize my input in backend. -->
+            Email: <input type="email" name="myEmail">
+        </div> <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div> <br>
+        <div>
+            <!-- input:number enter to take no as input -->
+            Bonus: <input type="number" name="myBonus" >
+            
+        </div>  <br>
+        <div>
+            <!-- input:ckeckbox enter to have a checkbox -->
+            <!-- nam=" ", checked to make it checked -->
+            <!-- label enter used so that we can go on the textbox or got checked by clicking on the textname -->
+            <!-- in label, for="id" where id is in input tag -->
+            <label for="eligible">Are you eligible?</label>
+            <!-- id is used when we use label tag otherwise id is of no use(remove it) -->
+            <input type="checkbox" name="myEligibility" id="eligible" >
+        </div><br>
+        <div>
+            <!-- input:radio enter to choose one out of many , where name of each input must be same to apply radio tag-->
+            Gender: Male <input type="radio" name="myGender" >
+            Female <input type="radio" name="myGender">
+            Transgender <input type="radio" name="myGender">
+        </div><br>
+        <div>
+            <!-- textarea enter to write something(paragraph) in a given box -->
+            Write about yourself:  <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div><br>
+        <div>
+            <!-- select enter used to select one of many like radio(but radio had circles & select is line-wise up-down) -->
+            <!-- then, press option enter to give the options. here value is used to check the selected item in backend and simple Indica/Swift is written to show in selection-box there -->
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Ind"  >Indica</option>
+                <!-- here, value=" " selected    where selected work as checked in checkbox to select it by default -->
+                <option value="Swi" selected>Swift</option>
+
+            </select>
+        </div><br>
+        <div>
+        <!-- input:submit enter to submit the form in backend php or any flie -->
+        <input type="submit" value="Submit Now">
+        </div><br>
+        <div>
+        <!-- input:reset enter to reset or again fill the data -->
+        <input type="reset" value="Reset Now">
+        </div>
+        
+        
+        
+
+    </form>
+    
+</body>
+</html>
