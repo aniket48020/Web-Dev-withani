@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is internal css where css is kept inside head tag in <style> tag. -->
+        <!-- !important used to give the higest precedence to something, eg:- color: green !important;    -->
+        <style> 
+           p { color:green ;
+                background-color: violet;
+            }
+            </style>
+    <!-- this is external css where we link external css file to markup or html code -->
+    <!-- link:css enter to add a css external file -->
+    <!-- priority:- in internal and external css, one which is written later or down in head take the precedence or priority -->
+    <link rel="stylesheet" href="tut13.css">
+    <title>CSS tutorial</title>
+</head>
+<body>
+    <h3>This is CSS tutorial</h3>
+    <!-- this is inline css which is added to the element directly using style tag -->
+    <p style="color: red;">This is inline css whose priority is more than internal css and external css</p>
+    <p>Aniket here.</p>
+    
+</body>
+</html>
